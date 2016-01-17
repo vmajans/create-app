@@ -1,0 +1,23 @@
+<?php
+
+namespace App\Repositories\DummyName;
+
+use App\Contracts\DummyName\DummyNameContract;
+use App\Database\Models\DummyName\DummyName;
+use App\Repositories\Repository;
+
+class DummyNameRepository extends Repository implements DummyNameContract
+{
+    /**
+    * DummyNameRepository constructor.
+    *
+    * @param \App\Database\Models\DummyName\DummyName $model
+    */
+    public function __construct(DummyName $model)
+    {
+        parent::__construct();
+
+        $this->model = $model;
+        $this->model->setPerPage($this->perPage);
+    }
+}

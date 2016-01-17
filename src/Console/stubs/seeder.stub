@@ -1,0 +1,16 @@
+<?php
+
+use App\Database\Seeds\Seeder;
+
+class DummyNameTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        //
+    }
+}
